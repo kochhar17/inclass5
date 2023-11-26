@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "css/styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav class="structural">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>What section of PROG1245 are you in?</legend>
+                    <label for="section4"><input type="radio" id="section4" name="sec" value="4" required>Section 4</label><br>
+                    <label for="section5"><input type="radio" id="section5" name="sec" value="5" required>Section 5</label><br>
+                    <label for="section8"><input type="radio" id="section8" name="sec" value="8" required>Section 8</label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="help">What do you need help with?</label>
+                <select id="help" name="help" required>
+                    <option selected>Select Option</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="both">Both (HTML & CSS)</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="human"><input type="checkbox" id="human" name="human" value="true" required>I am a human</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
